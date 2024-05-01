@@ -12,6 +12,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        //SceneDelegate에서 설정해주지 않으면 ViewController에서 나온다.
+        view.backgroundColor = .yellow
     }
 
 
