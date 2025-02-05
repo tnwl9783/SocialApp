@@ -24,7 +24,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
         // iOS 13.0부터는 SceneDelegate에서 RootViewController를 반드시 설정해주고 개발 할 수 있다. UI는 window인데 위에 생성한 scene를 이용한다
         window = UIWindow(windowScene: scene)
-        window?.rootViewController = MainTabBarController()
+        //window?.rootViewController = MainTabBarController()
+        window?.rootViewController = UINavigationController(rootViewController: LoginViewController())
+        
         window?.makeKeyAndVisible()
     }
 

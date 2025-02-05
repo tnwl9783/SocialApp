@@ -5,4 +5,12 @@
 //  Created by jeonsuji on 5/3/24.
 //
 
-import Foundation
+import UIKit
+
+class ProfileController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        view.backgroundColor = .cyan
+    }
+}
